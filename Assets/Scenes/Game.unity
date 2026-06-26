@@ -2769,6 +2769,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1189886368449285339, guid: 31505bc92b33c254cb571d93ba0131db, type: 3}
+--- !u!1 &1201097936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8893546955318378873, guid: 49810a302498ca140ae81ac4f7cd5ebe, type: 3}
+  m_PrefabInstance: {fileID: 9186483146347755074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1201097943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201097936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36b8efd8ab270e4f92c3d0206514c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  gunPosition: {fileID: 1211235346}
 --- !u!1001 &1203301908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2860,6 +2878,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1189886368449285339, guid: 31505bc92b33c254cb571d93ba0131db, type: 3}
+--- !u!4 &1211235346 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4234335291578814577, guid: 49810a302498ca140ae81ac4f7cd5ebe, type: 3}
+  m_PrefabInstance: {fileID: 9186483146347755074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1226602268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1237774550027803062, guid: dd8db4e8ae042d44bb14b9605b044965, type: 3}
@@ -3232,6 +3255,7 @@ GameObject:
   - component: {fileID: 1435566272}
   - component: {fileID: 1435566271}
   - component: {fileID: 1435566273}
+  - component: {fileID: 1435566274}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Gun
@@ -3290,6 +3314,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7, y: 1, z: 1.07}
   m_Center: {x: 0, y: 0.01, z: 0.25}
+--- !u!114 &1435566274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435566270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13abb1ed9038fff4b8914a6f1ddcf5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  animator: {fileID: 0}
+  rotateScript: {fileID: 0}
 --- !u!1001 &1439591801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4697,7 +4735,7 @@ GameObject:
   - component: {fileID: 4548576405388092663}
   m_Layer: 0
   m_Name: SM_SciFi_Weapons_01
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4979,10 +5017,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 8893546955318378873, guid: 49810a302498ca140ae81ac4f7cd5ebe, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8893546955318378873, guid: 49810a302498ca140ae81ac4f7cd5ebe, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1201097943}
   m_SourcePrefab: {fileID: 100100000, guid: 49810a302498ca140ae81ac4f7cd5ebe, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
